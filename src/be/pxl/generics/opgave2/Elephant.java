@@ -10,7 +10,7 @@ public class Elephant implements Moveable<Location> {
     }
 
     @Override
-    public String getCurrentLocation() {
-        return Location.IN_THE_VILLAGE.toString();
+    public Location getCurrentLocation() {
+        return location;
     }
 }

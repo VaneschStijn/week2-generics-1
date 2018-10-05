@@ -10,7 +10,7 @@ public class ChessPiece implements Moveable<ChessBoardLocation> {
     }
 
     @Override
-    public String getCurrentLocation() {
-        return location.toString();
+    public ChessBoardLocation getCurrentLocation() {
+        return location;
     }
 }
