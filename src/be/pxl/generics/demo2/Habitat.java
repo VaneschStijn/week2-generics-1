@@ -4,9 +4,10 @@ public class Habitat<A extends Animal> {
     private A inhabitant;
 
     public void addInhabitant(A inhabitant) throws HabitatOvercrowdedException {
-        if (inhabitant != null) {
+        if (this.inhabitant != null) {
             throw new HabitatOvercrowdedException("Habitat full.");
         }
         this.inhabitant = inhabitant;
+        System.out.println("The Inhabitant is a " + inhabitant.getClass().getSimpleName());
     }
 }

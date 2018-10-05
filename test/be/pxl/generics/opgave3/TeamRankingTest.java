@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class TeamRankingTest {
-	/*
+
 	private static final Team<SoccerPlayer> OPPONENT = new Team<>("Oponent");
 
 	@Test
@@ -32,12 +32,11 @@ public class TeamRankingTest {
 	
 	@Test
 	public void testPointsAreCorrectlyAdded() {
-		Team<SoccerPlayer> ourTeam = new Team<>("OurTeam");
-		ourTeam.matchResult(OPPONENT, 9, 5);
-		ourTeam.matchResult(OPPONENT, 9, 5);
-		ourTeam.matchResult(OPPONENT, 5, 5);
-		ourTeam.matchResult(OPPONENT, 5, 5);
-		assertEquals(8, ourTeam.ranking());
-	}
-	*/
+        Team<SoccerPlayer> ourTeam = new Team<>("OurTeam");
+        ourTeam.matchResult(OPPONENT, 9, 5);
+        ourTeam.matchResult(OPPONENT, 9, 5);
+        ourTeam.matchResult(OPPONENT, 5, 5);
+        ourTeam.matchResult(OPPONENT, 5, 5);
+        assertEquals(8, ourTeam.ranking());
+    }
 }
